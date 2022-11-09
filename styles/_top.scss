@@ -1,0 +1,42 @@
+.top {
+      text-align: center;
+
+
+      &__title {
+            font-size: 2.12rem;
+            line-height: 2.62rem;
+            font-family: "Roboto-Bold";
+            padding-bottom: 30px;
+      }
+
+      &__subtitle {
+            font-size: 1.125rem;
+            line-height: 1.364rem;
+            
+
+
+            &_padTopLarge {
+                  padding-top: 70px;
+                  padding-bottom: 40px;
+
+            }
+      }
+}
+
+@media only screen and (max-width: 420px) {
+      .top {
+            &__subtitle {
+                  &_padTopLarge {
+                        padding-top: 50px;
+
+                  }
+            }
+
+            &__title {
+                  &_mobileMarBot {
+                        margin-bottom: 30px;
+                  }
+            }
+
+      }
+}

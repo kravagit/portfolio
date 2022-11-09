@@ -1,0 +1,33 @@
+.description {
+    padding: 120px 0 107px 0;
+
+    &__title {
+        font-size: 34px;
+        line-height: 2.6rem;
+        padding-bottom:17px;
+        text-align: center;
+        font-family: "Roboto-Bold";
+
+    }
+
+    &__subTitle {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        text-align: center;
+        &+&{
+            margin-top:3rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .description {
+        &__title {
+            padding-bottom: 30px;
+        }
+        &__subTitle {
+            padding: 0 30px;
+        }
+    }
+}

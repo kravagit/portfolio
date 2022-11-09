@@ -1,0 +1,87 @@
+.cards {
+    padding: 110px 0;
+
+		&__wrapper {
+            display: flex;
+            justify-content: space-between;
+
+		}
+}
+
+.skillCard {
+    width: 22%;
+
+		&__icon {
+            display: block;
+            width: 80%;
+            aspect-ratio: 1/1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+
+			&_html {
+                background-image: $htmlIcon ;
+                
+			}
+
+			&_css {
+                background-image: $cssIcon;
+			}
+
+			&_vscode {
+                background-image: $vscodeIcon;
+			}
+
+			&_figma {
+                background-image: $figmaIcon;
+                background-size: 90%;
+			}
+		}
+
+		&__subtitle {
+            text-align: center;
+            margin-top: 27px;
+		}
+
+		&__stars {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+
+            
+		}
+
+		&__star {
+            width: 20%;
+            aspect-ratio: 1/1;
+            background-image: $starIcon;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center;
+            
+            
+
+
+			&_disabled {
+                opacity: 0.2;
+			}
+		}
+}
+
+@media only screen and (max-width: 420px) {
+      .cards{
+            &__wrapper{
+                  flex-direction: column;
+                  align-items: center;
+                  margin: 70px 0 100px;
+            }
+      }
+
+      .skillCard {
+            width: 44%;
+            & +& {
+                  margin-top: 80px;
+            }
+      }
+}

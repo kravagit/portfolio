@@ -1,0 +1,113 @@
+.mobileMenu {
+    
+    z-index: 10;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: white;
+    top: 0;
+    right: 0;
+    padding: 60px 25px;
+    position: absolute;
+    transform: translateX(100%);
+    transition: transform 0.5s ;
+    display: none;
+    max-height: 100vh;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    &__item {
+        color: #828282;
+        font-family:"Roboto-Bold";
+        font-size: 34px;
+        line-height: 2.6rem;
+            & + & {
+                padding-bottom: 70px;
+            }
+
+        &_active{
+            color: #000;
+            padding-bottom: 70px;
+        }
+
+    }
+
+    &__burger {
+        position: absolute;
+        top: 75px;
+        left: -30px;
+        transform: translateX(-100%);
+
+        width: 33px;
+        height: 25px;
+        & span{
+            position: absolute;
+            background-color: #000;
+            width: 33px;
+            height: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            top: 0;
+            right: 0;
+            background-color: #000;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            right: 0;
+            background-color: #000;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 75px;
+        right: 30px;
+        width: 33px;
+        height: 33px;
+        
+        
+        &::before,&::after{
+            background: #000;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%) rotate(45deg); 
+
+
+
+        }
+        &::after{
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .mobileMenu {
+     display: block;
+
+     &_show {
+        transform: translateX(0%);
+     }
+    }
+ }
+ 

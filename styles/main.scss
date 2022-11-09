@@ -1,0 +1,34 @@
+@import "./variables";
+@import "./header";
+@import "./person";
+@import "./discription";
+@import "./top";
+@import "./cards";
+@import "./footer";
+@import "./fonts";
+@import "./mobileMenu";
+@import "./reset"; 
+
+body.disableScroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper{
+    width:100% ;
+    overflow-x: hidden;
+
+    &_grey{
+        background-color: #F6F6F6;
+    }
+}
+
+.container {
+    max-width: 943px ;
+    margin: 0 auto;
+}
+
+.outer {
+    overflow: hidden;
+    position: relative;
+}

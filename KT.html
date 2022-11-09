@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>KravaPortfolio</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="mobileMenu" id="mobileMenu">
+            <div class="mobileMenu__list">
+                <div class="mobileMenu__item mobileMenu__item_active">Home</div>
+                <div class="mobileMenu__item">About me</div>
+                <div class="mobileMenu__item">Skills</div>
+                <div class="mobileMenu__item">Portfolio</div>
+                <div class="mobileMenu__item">contacts</div>
+            </div>
+            <div class="mobileMenu__burger" id="mobileMenuToggle">
+                <span></span>
+            </div>
+            <div class="mobileMenu__close" id="mobileMenuClose"></div>
+
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <header class="header">
+                    <div class="header__menu">
+                        <a href="#" class="header__menuItem">Home</a>
+                        <a href="#" class="header__menuItem">About me</a>
+                        <a href="#" class="header__menuItem">Skills</a>
+                        <a href="#" class="header__menuItem">Portfolio</a>
+                        <a href="#" class="header__menuItem">Contacts</a>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+                <section class="person">
+                    <div class="person__header">
+                        <div class="person__headerName">Kravchenko  <br> Volodymyr</div>
+                        <div class="person__headerAbout">Frontend Developer <br> 25 years old, Kyiv</div>
+                        <div class="person__headerLang">
+                            <input checked type="radio" name="lang" id="ua">
+                            <input type="radio" name="lang" id="eng">
+                            <label id="uah" class="lang" for="ua">UA</label> |
+                            <label id="usd" class="lang" for="eng">ENG</label>
+                        </div>
+                    </div>
+                    <div class="person__imgContainer">
+                        <img src="/img/img_8387.JPG" alt="">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper wrapper_grey">
+            <div class="container">
+                <section class="description">
+                    <div class="description__title">About me</div>
+                    <div class="description__subTitle">
+                        Hi, I'm Volodymyr – Frontend Developer from Kyiv.
+                        <br>
+                        I'm interested in development and everything connected with it.
+                    </div>
+                    <div class="description__subTitle">
+                        I'm studying at course "Frontend" in Beetroot Academy.
+                    </div>
+                    <div class="description__subTitle">
+                        Ready to implement excellent projects
+                        <br>
+                        with wonderful people.
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <section class="cards">
+                    <div class="top">
+                        <div class="top__title">Skills</div>
+                        <div class="top__subtitle top__subtitle_padTopLarge">I have skills in such technologies as</div>
+                    </div>
+                    <div class="cards__wrapper">
+                        <div class="skillCard">
+                            <a href="https://css.in.ua/html/tags" target="_blank"
+                                class="skillCard__icon skillCard__icon_html"></a>
+                            <div class="skillCard__subtitle">HTML</div>
+                            <div class="skillCard__stars">
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star skillCard__star_disabled"></div>
+                            </div>
+                        </div>
+                        <div class="skillCard">
+                            <a href="https://css.in.ua/css/properties" target="_blank"
+                                class="skillCard__icon skillCard__icon_css"></a>
+                            <div class="skillCard__subtitle">CSS</div>
+                            <div class="skillCard__stars">
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star skillCard__star_disabled"></div>
+                            </div>
+                        </div>
+                        <div class="skillCard">
+                            <a href="https://code.visualstudio.com/" target="_blank"
+                                class="skillCard__icon skillCard__icon_vscode"></a>
+                            <div class="skillCard__subtitle">VSCODE</div>
+                            <div class="skillCard__stars">
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star skillCard__star_disabled"></div>
+                            </div>
+                        </div>
+                        <div class="skillCard">
+                            <a href="https://www.figma.com/" target="_blank"
+                                class="skillCard__icon skillCard__icon_figma"></a>
+                            <div class="skillCard__subtitle">FIGMA</div>
+                            <div class="skillCard__stars">
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star"></div>
+                                <div class="skillCard__star skillCard__star_disabled"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper_grey">
+            <div class="container">
+                <footer class="footer">
+                    <div class="top">
+                        <div class="top__title  top__title_mobileMarBot">Contacts</div>
+                        <div class="top__subtitle ">Want to know more or just chat? <br> You are welcome!</div>
+                    </div>
+                    <div class="buttonContainer">
+                        <a href="#" class="button">Send message</a>
+                    </div>
+                    <div class="icons">
+                        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="icons__item icons__item_email"></a>
+                        <a href="https://www.instagram.com/vovander_22/" target="_blank" class="icons__item icons__item_inst"></a>
+                        <a href="https://t.me/Krava0622" target="_blank" class="icons__item icons__item_tg"></a>
+                        <a href="#" target="_blank" class="icons__item icons__item_fb"></a>
+                    </div>
+                    <div class="footer__subtitle">Like me on <br>  Gmail, Instagram, Telegram, Facebook </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
